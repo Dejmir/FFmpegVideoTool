@@ -130,7 +130,7 @@ namespace VideoTool
             string audioChannels = "";
             string compress = "";
             string threads = "";
-            string audioValue = this.MenuListPreset2.Header.ToString().Trim().Split(':')[1];
+            string audioValue = this.MenuListPreset2.Header.ToString().Replace(" ", "").Split(':')[1];
             //if (int.Parse(this.TextStartVideo.Text) >= int.Parse(this.TextEndVideo.Text)) return;
             if (this.TextStartVideo.Text != "00:00") cut = $"-ss {this.TextStartVideo.Text} -to {this.TextEndVideo.Text}";
             if (audioValue == "first") audioChannels = "-map 0:a:0";

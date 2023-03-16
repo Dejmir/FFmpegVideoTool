@@ -17,7 +17,7 @@
         <Label x:Name="LabelBuffering" Content="Buffering..." HorizontalAlignment="Left" Margin="62,156,0,0" VerticalAlignment="Top" Height="59" Width="215" FontSize="36" Foreground="White" FontStyle="Italic" FontWeight="Bold" FontFamily="Rubik"/>
         <CheckBox x:Name="BoxShowBuffering" Content="Show Buffering Text" HorizontalAlignment="Left" Margin="42,87,0,0" VerticalAlignment="Top"/>
         <Menu HorizontalAlignment="Left" Height="18" Margin="483,138,0,0" VerticalAlignment="Top" Width="100">
-            <MenuItem x:Name="MenuListPreset" Header="Preset: ultrafast" HorizontalAlignment="Center" Height="18" Width="100">
+            <MenuItem x:Name="MenuListPreset" Header="Preset: medium" HorizontalAlignment="Center" Height="18" Width="100">
                 <MenuItem Header="ultrafast" HorizontalAlignment="Left" Height="23" Width="140"/>
                 <MenuItem Header="superfast" HorizontalAlignment="Left" Height="23" Width="140"/>
                 <MenuItem Header="veryfast" HorizontalAlignment="Left" Height="23" Width="140"/>
