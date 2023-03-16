@@ -6,7 +6,7 @@ A simple tool thats simplificates using ffmpeg for <b>very basic</b> video editi
 
 
 ### </b>[💿]</b> Installation:
-- Download the release version
+- [Download the release version](https://github.com/Dejmir/FFmpegVideoTool/releases)
 - Unpack executable to some folder
 - Run "AddToContextMenu.bat" and select correctly path
 - Download and install [.NET Framework 4.7.2 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet-framework/thank-you/net472-web-installer)
