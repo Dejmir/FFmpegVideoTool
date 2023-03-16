@@ -9,7 +9,7 @@ A simple tool thats simplificates using ffmpeg for <b>very basic</b> video editi
 - Download the release version
 - Unpack executable to some folder
 - Run "AddToContextMenu.bat" and select correctly path
-- Download FFmpeg and unpack
+- Download [FFmpeg](https://ffmpeg.org/download.html) and unpack
 - Set up system variables to FFmpeg folder (WIN👉search for "systempropertiesadvanced"👉Advanced👉Environment Variables👉Path👉Edit👉New👉Enter folder path where ffmpeg extracted👉OK)
 - Done!
 
