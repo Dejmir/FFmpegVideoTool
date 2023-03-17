@@ -17,7 +17,7 @@
         <Label x:Name="LabelBuffering" Content="Buffering..." HorizontalAlignment="Left" Margin="62,156,0,0" VerticalAlignment="Top" Height="59" Width="215" FontSize="36" Foreground="White" FontStyle="Italic" FontWeight="Bold" FontFamily="Rubik"/>
         <CheckBox x:Name="BoxShowBuffering" Content="Show Buffering Text" HorizontalAlignment="Left" Margin="42,87,0,0" VerticalAlignment="Top"/>
         <Menu HorizontalAlignment="Left" Height="18" Margin="483,138,0,0" VerticalAlignment="Top" Width="100">
-            <MenuItem x:Name="MenuListPreset" Header="Preset: medium" HorizontalAlignment="Center" Height="18" Width="100">
+            <MenuItem IsEnabled="False" x:Name="MenuListPreset" Header="Preset: medium" HorizontalAlignment="Center" Height="18" Width="100">
                 <MenuItem Header="ultrafast" HorizontalAlignment="Left" Height="23" Width="140"/>
                 <MenuItem Header="superfast" HorizontalAlignment="Left" Height="23" Width="140"/>
                 <MenuItem Header="veryfast" HorizontalAlignment="Left" Height="23" Width="140"/>
@@ -39,9 +39,9 @@
         <TextBox x:Name="TextStartVideo" HorizontalAlignment="Left" Height="19" Margin="337,137,0,0" TextWrapping="Wrap" Text="00:00" VerticalAlignment="Top" Width="35"/>
         <TextBox x:Name="TextEndVideo" HorizontalAlignment="Left" Height="19" Margin="337,161,0,0" TextWrapping="Wrap" Text="00:00" VerticalAlignment="Top" Width="35"/>
         <Label Content="Cut video" HorizontalAlignment="Left" Margin="377,145,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="TextCRF" HorizontalAlignment="Left" Margin="483,161,0,0" TextWrapping="Wrap" Text="23" VerticalAlignment="Top" Width="19" KeyUp="TextCRF_KeyUp"/>
+        <TextBox IsEnabled="False" x:Name="TextCRF" HorizontalAlignment="Left" Margin="483,161,0,0" TextWrapping="Wrap" Text="23" VerticalAlignment="Top" Width="19" KeyUp="TextCRF_KeyUp"/>
         <Label Content="CRF value(hover)" HorizontalAlignment="Left" Margin="500,156,0,0" VerticalAlignment="Top" Width="98" ToolTip="CRF scale is 0–51, where 0 is lossless (for 8 bit only, for 10 bit use -qp 0), 23 is the default, and 51 is worst quality possible. A lower value generally leads to higher quality, and a subjectively sane range is 17–28. Consider 17 or 18 to be visually lossless or nearly."/>
-        <CheckBox x:Name="BoxCompression" Content="Compression" HorizontalAlignment="Left" Margin="483,200,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="BoxCompression" Content="Compression" HorizontalAlignment="Left" Margin="483,200,0,0" VerticalAlignment="Top" Click="BoxCompression_Click"/>
         <Button x:Name="ButtonRender" Content="Render!" HorizontalAlignment="Left" Margin="436,241,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontFamily="Lato" FontSize="16" Click="ButtonRender_Click"/>
         <TextBox x:Name="TextThreads" HorizontalAlignment="Left" Height="19" Margin="337,209,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="35" KeyUp="TextThreads_KeyUp"/>
         <Label Content="Threads" HorizontalAlignment="Left" Margin="377,204,0,0" VerticalAlignment="Top" Height="30"/>

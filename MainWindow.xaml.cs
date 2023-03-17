@@ -128,7 +128,7 @@ namespace VideoTool
         {
             string cut = "";
             string audioChannels = "";
-            string compress = "";
+            string compress = "-vcodec copy";
             string threads = "";
             string audioValue = this.MenuListPreset2.Header.ToString().Replace(" ", "").Split(':')[1];
             //if (int.Parse(this.TextStartVideo.Text) >= int.Parse(this.TextEndVideo.Text)) return;
@@ -153,6 +153,13 @@ namespace VideoTool
         {
             if (!int.TryParse(this.TextThreads.Text, out int threads) || threads > Environment.ProcessorCount || threads < 0) 
                 this.TextThreads.Text = Environment.ProcessorCount.ToString();
+        }
+
+        private void BoxCompression_Click(object sender, RoutedEventArgs e)
+        {
+            bool value = (bool)this.BoxCompression.IsChecked;
+            this.MenuListPreset.IsEnabled = value;
+            this.TextCRF.IsEnabled = value;
         }
     }
 }
